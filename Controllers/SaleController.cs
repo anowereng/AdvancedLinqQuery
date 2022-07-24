@@ -34,5 +34,12 @@ namespace EF_Practices.Controllers
             var result = await _services.GetSaleStates();
             return Ok(result);
         }
+
+        [HttpGet("GetInCompleteOrders")]
+        public async Task<ActionResult> GetInCompleteOrders()
+        {
+            var result = await _services.GetSaleStates();
+            return Ok(result);
+        }
     }
 }
