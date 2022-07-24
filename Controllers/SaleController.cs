@@ -38,7 +38,7 @@ namespace EF_Practices.Controllers
         [HttpGet("GetInCompleteOrders")]
         public async Task<ActionResult> GetInCompleteOrders()
         {
-            var result = await _services.GetSaleStates();
+            var result = null;
             return Ok(result);
         }
     }
